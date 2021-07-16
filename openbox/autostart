@@ -1,5 +1,6 @@
 tint2 &
 picom &
+lxpolkit &
 nitrogen --restore &
 rofi -show run &
 blueman-applet &
