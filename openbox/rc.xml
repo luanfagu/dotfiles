@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -359,6 +359,25 @@
           <name>Terminal</name>
         </startupnotify>
         <command>alacritty</command>
+      </action>
+    </keybind>
+    <!-- Utilities keybinds -->
+    <keybind key="W-Prior">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Display port 0 OFF</name>
+        </startupnotify>
+        <command>/home/luanf/.config/scripts/turn-dp-0-off.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-Next">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Display port 0 ON</name>
+        </startupnotify>
+        <command>/home/luanf/.config/scripts/turn-dp-0-on.sh</command>
       </action>
     </keybind>
   </keyboard>
